@@ -17,7 +17,7 @@
 
     <style>
       nav {
-        background-color: #000000;
+        background-color: #070720;
         box-shadow: 0px 5px 20px grey;
         position: sticky !important;
         top: 0% !important;
@@ -29,15 +29,25 @@
         color: #ffffff !important;
       }
 
+      .navbar-brand:hover,
+      .nav-link:hover,
+      .nav-btn:hover{
+        color: #cccccc !important;;
+      }
+
       .nav-btn {
         outline: #ffffff;
+      }
+
+      .fa-solid{
+        font-size: 1.6em;
       }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><span class="fw-bold text-danger">Sumeru</span>TV</a
         >
         <button
@@ -54,23 +64,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link home active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle categories"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="sliceoflife.html">Slice of life</a></li>
+                <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                <li><a class="dropdown-item" href="shounen.html">Shounen</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Movies</a>
+              <a class="nav-link" href="blog.html">Our blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Series</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Anime</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Songs</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href=""><i class="fa-solid fa-user"></i></a>
+          </li>
         </div>
       </div>
+
     </nav>
 
     <!-- bootstrap JS -->
@@ -84,5 +117,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <script>
+      
+    </script>
   </body>
 </html>
