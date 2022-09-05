@@ -8808,3 +8808,8 @@ if ( typeof noGlobal === "undefined" ) {
 
 return jQuery;
 } );
+$(document).ready(()=> {
+
+    $("#navLoad").load("nav.html");
+  
+  });
