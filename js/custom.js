@@ -1,4 +1,6 @@
-$(document).ready(()=>{
-    
-    $('#navLoad').load("nav.html")
-})
+$(document).ready(()=> {
+
+    $("#navLoad").load("nav.html");
+  
+  });
+  
